@@ -1,6 +1,6 @@
 # CC 프로젝트 문서 (cclinic.kr)
 
-> 이 폴더는 참의원(Charm Clinic) 웹사이트 프로젝트의 운영 문서를 관리합니다.  
+> 이 폴더는 참의원(Charm Clinic) 웹사이트 프로젝트의 운영 문서를 관리합니다.
 > AI 어시스턴트가 필요한 파일만 선택적으로 읽고 수정하여 토큰 효율을 극대화합니다.
 
 ## 문서 구조
@@ -11,7 +11,7 @@
 | `01-site/pages.md` | 페이지별 URL·설명·priority | CC표준1 §1-3 |
 | `01-site/seo.md` | robots.txt, sitemap, JSON-LD, OG, hreflang | CC표준1 §2-5 |
 | `01-site/i18n.md` | 영문 사이트 구조, JSON/JS 파일 목록 | CC표준1 §2-2 |
-| `01-site/infra.md` | 호스팅, DNS, Codespaces, 비용, 가격표 CDN | CC표준1 §2-1, 2-3, 2-6, 2-8 |
+| `01-site/infra.md` | 호스팅, DNS, Codespaces, 비용, 팀 구성 | CC표준1 §2-1, 2-3, 2-6, 2-8 |
 | `01-site/images.md` | 이미지 현황, 경로 목록 | CC표준1 §2-4 |
 | `01-site/treatments.md` | 시술 체계 (지방파괴주사 8종 + 소프트주사) | CC표준1 §3, 4 |
 | `01-site/blog.md` | 네이버 블로그 현황, 홈판 분석, 작성 콘텐츠 | CC표준1 §5 |
@@ -32,3 +32,4 @@
 |------|------|-----------|
 | 2026-04-11 | 전체 | 초기 생성 — CC표준1·2·3 (v4.0/v2.0/v2.0) 내용을 Markdown으로 마이그레이션 |
 | 2026-04-11 | README.md | heredoc 오류 파일 3건 삭제, 파일 수 19개 확정 |
+| 2026-04-15 | infra.md, 2026-04.md, decisions.md, README.md | 문서 저장소 cclinic_pub 전환, 팀 구성 추가, 문서 관리 변천 기록 |
