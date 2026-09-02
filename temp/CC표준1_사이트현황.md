@@ -1,0 +1,404 @@
+---
+
+# **CC표준1: CC 마스터문서 (v5.0 / 2026-05-12)**
+
+**기준일:** 2026-05-12  
+ **이전 버전:** v4.0 (2026-04-11, 영문 사이트 구축 완료, Genspark CDN 제거)  
+ **변경 사유:** 카카오톡 오픈채팅 상담채널 추가(데스크탑·모바일), GA4 kakao\_click 이벤트 추가, 소프트주사 계열 삭제(당분간 미진행)  
+ **참조 문서:** CC표준2(작업이력·의사결정), CC표준3(잔여작업·로드맵)
+
+---
+
+## **1\. 참의원 기본 정보**
+
+### **1-1. 병원 개요**
+
+참의원(Charm Clinic)은 서울 관악구에 위치한 체형조각 전문 클리닉입니다. 정창영 원장이 운영하며, 지방파괴주사를 이용한 비수술 체형교정을 전문으로 합니다. 40,000건 이상의 시술 경험과 98% 이상의 만족도를 보유하고 있으며, 눈두덩이주사는 특허출원된 참의원 고유의 시술입니다.
+
+연락처: 02-838-3380 / 010-9832-3380  
+ 주소: 서울특별시 관악구 관악로 164 B동 201호  
+ 교통: 서울대입구역 2호선 2번출구  
+ 네이버 플레이스: [https://m.place.naver.com/place/70976119/location](https://m.place.naver.com/place/70976119/location)  
+ 네이버 예약: [https://booking.naver.com/booking/13/bizes/837910](https://booking.naver.com/booking/13/bizes/837910)  
+ 업무시간: 월·화·목·금 10:00-19:00 / 수 10:00-13:00 / 토 09:00-14:00
+
+### **1-2. 온라인 채널**
+
+| 채널 | URL |
+| ----- | ----- |
+| 병원 홈페이지(PC) | [https://cclinic.kr](https://cclinic.kr/) |
+| 병원 홈페이지(모바일) | [https://cclinic.kr/m/](https://cclinic.kr/m/) |
+| 병원 홈페이지(영문) | [https://cclinic.kr/en/](https://cclinic.kr/en/) |
+| 가격표 CDN | [https://file.cclinic.kr](https://file.cclinic.kr/) |
+| 병원 블로그 | [https://blog.naver.com/idcharm23](https://blog.naver.com/idcharm23) |
+| 병원 유튜브 | [https://www.youtube.com/@charmclinicseoul](https://www.youtube.com/@charmclinicseoul) |
+| 네이버 카페 | [https://cafe.naver.com/cclinic](https://cafe.naver.com/cclinic) |
+| 카카오톡 오픈채팅 | [https://open.kakao.com/o/szrVRzui](https://open.kakao.com/o/szrVRzui) |
+
+### **1-3. 홈페이지 구조 (2026-05-12 기준, sitemap.xml 24개 URL)**
+
+홈페이지는 2026년 3월 대폭 리뉴얼되었으며, 각 시술별 독립 페이지가 구축되어 있습니다. 메인 슬로건은 "당신의 라인을 예술로 조각하다"입니다. AI 크롤러용 Markdown 파일과 llms.txt가 별도로 제공됩니다. 2026년 4월 11일 영문 사이트([cclinic.kr/en/](http://cclinic.kr/en/))가 추가되어 국제 환자 접점이 마련되었습니다. 2026년 5월 12일 데스크탑·모바일 상담 섹션에 카카오톡 오픈채팅 링크가 추가되었습니다.
+
+| URL | 시술명 | 업데이트 | 우선순위 |
+| ----- | ----- | ----- | ----- |
+| [cclinic.kr/](http://cclinic.kr/) | 메인 페이지 | 2026-05-12 | 1.0 |
+| [cclinic.kr/m/](http://cclinic.kr/m/) | 모바일 메인 | 2026-05-12 | 0.9 |
+| [cclinic.kr/en/](http://cclinic.kr/en/) | 영문 메인 | 2026-04-11 | 0.8 |
+| [cclinic.kr/fat-graft-removal-injection/](http://cclinic.kr/fat-graft-removal-injection/) | 지방이식제거주사 | 2026-03-01 | 0.8 |
+| [cclinic.kr/adhesion-injection/](http://cclinic.kr/adhesion-injection/) | 유착제거주사 | 2026-03-01 | 0.8 |
+| [cclinic.kr/eyelid-injection/](http://cclinic.kr/eyelid-injection/) | 눈두덩이주사 | 2026-03-01 | 0.8 |
+| [cclinic.kr/face-line-injection/](http://cclinic.kr/face-line-injection/) | 윤곽주사 | 2026-03-01 | 0.8 |
+| [cclinic.kr/v-line-injection/](http://cclinic.kr/v-line-injection/) | 브이라인주사 | 2026-03-01 | 0.8 |
+| [cclinic.kr/powerline-injection/](http://cclinic.kr/powerline-injection/) | 파워라인주사 | 2026-03-01 | 0.8 |
+| [cclinic.kr/cellulite-injection/](http://cclinic.kr/cellulite-injection/) | 셀룰라이트주사 | 2026-03-02 | 0.7 |
+| [cclinic.kr/striae-injection/](http://cclinic.kr/striae-injection/) | 튼살주사 | 2026-03-02 | 0.7 |
+| [cclinic.kr/reviews/](http://cclinic.kr/reviews/) | 후기/상담 페이지 | 2026-03-01 | 0.6 |
+| [cclinic.kr/media/](http://cclinic.kr/media/) | 미디어/방송 페이지 | 2026-03-01 | 0.6 |
+| [cclinic.kr/llms.txt](http://cclinic.kr/llms.txt) | AI 크롤러 요약(52줄) | 2026-03-14 | 0.3 |
+| [cclinic.kr/llms-full.txt](http://cclinic.kr/llms-full.txt) | AI 크롤러 상세(442줄) | 2026-03-14 | 0.3 |
+| [cclinic.kr/{시술별}/index.html.md](http://cclinic.kr/%7B%EC%8B%9C%EC%88%A0%EB%B3%84%7D/index.html.md) (×8) | Markdown 시술문서 | 2026-03-14 | 0.4 |
+
+---
+
+## **2\. 기술 인프라 및 개발 환경**
+
+### **2-1. 기술 스택**
+
+cclinic.kr은 순수 정적 HTML/CSS/JS로 구축되어 있으며, Cloudflare Pages에서 호스팅됩니다. 서버사이드 렌더링, 데이터베이스, 프레임워크(Next.js, Supabase 등)는 사용하지 않습니다. 이 결정은 사이트 규모(24개 URL, 8개 시술 페이지)와 업데이트 빈도를 고려하여 내려진 것이며, 콘텐츠 규모가 50-100페이지 이상이 되거나 주간 단위 업데이트가 필요해질 때까지 유지합니다.
+
+| 항목 | [cclinic.kr](http://cclinic.kr/) | [file.cclinic.kr](http://file.cclinic.kr/) |
+| ----- | ----- | ----- |
+| 호스팅 | Cloudflare Pages (무료) | Cloudflare Pages (무료) |
+| 저장소 | [github.com/cyjung23/cclinic](http://github.com/cyjung23/cclinic) (private) | [github.com/cyjung23/cclinicfile](http://github.com/cyjung23/cclinicfile) (private) |
+| Cloudflare 프로젝트명 | cclinic | cclinicfile |
+| pages.dev 주소 | cclinic.pages.dev | cclinicfile.pages.dev |
+| SSL | Cloudflare 자동 | Cloudflare 자동 |
+| 캐시 | Cloudflare 기본 | max-age=300 (5분) |
+| CORS | 해당 없음 | Access-Control-Allow-Origin: \* |
+| 도메인 | [cclinic.kr](http://cclinic.kr/), [www.cclinic.kr](http://www.cclinic.kr/) (CNAME) | [file.cclinic.kr](http://file.cclinic.kr/) (CNAME) |
+| DNS CNAME 대상 | cclinic.pages.dev | cclinicfile.pages.dev |
+
+### **2-2. 다국어(i18n) 구조 (2026-04-11 신규)**
+
+영문 사이트는 모바일 페이지(m/)를 기반으로 en/ 폴더에 구축되었으며, 원페이지 구조로 시술 상세 링크 없이 자체 완결됩니다. 서비스 상세는 JSON 데이터에서 동적 로드되며, 사이드 패널로 표시됩니다.
+
+**폴더 구조:**
+
+en/
+
+├── index.html           (영문 메인 페이지, lang="en")
+
+├── thank-you/
+
+│   └── index.html       (영문 상담완료 페이지)
+
+├── data/
+
+│   ├── services-index.json
+
+│   ├── services/         (8개: fatgraft, adhesion, eyelid, faceline, vline, powerline, cellulite, striae)
+
+│   ├── reviews/          (6개: fatgraft, adhesion, eyelid, faceline, vline, powerline)
+
+│   └── media/
+
+│       └── articles.json
+
+└── js/
+
+    ├── app.js
+
+    ├── service-panel.js
+
+    ├── review-panel.js
+
+    ├── media-panel.js
+
+    └── ga4-events.js
+
+**hreflang 설정:** index.html, m/index.html, en/index.html 모두에 `<link rel="alternate" hreflang="ko">`, `<link rel="alternate" hreflang="en">`, `<link rel="alternate" hreflang="x-default">` 태그가 삽입되어 있습니다.
+
+**영문 번역 범위:** 서비스 카드 8종, 서비스 상세 패널(How It Works, Benefits, FAQ), 리뷰 6개 카테고리, 언론보도 7건, UI 텍스트(버튼, 안내문구, 폼 메시지), 메타태그(title, description, OG), JSON-LD, thank-you 페이지 전체가 영문으로 전환되었습니다.
+
+**영문 가격표:** [file.cclinic.kr/images/price\_en.webp로](http://file.cclinic.kr/images/price_en.webp%EB%A1%9C) 연결되어 있으며, 현재 한글로 되어 있고 추후 영문 변경 예정입니다.
+
+**국제 환자 상담:** 기존 010 문자상담만 유지하며, WhatsApp 링크는 추가하지 않기로 결정했습니다.
+
+### **2-3. 개발 환경 — GitHub Codespaces**
+
+두 저장소 모두 GitHub Codespaces \+ VS Code \+ Live Server 환경에서 개발합니다. Genspark AI Builder는 2026년 4월 10일부로 폐기되었습니다.
+
+devcontainer.json (cclinic 저장소):
+
+{
+
+  "name": "cclinic",
+
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+
+  "customizations": {
+
+    "vscode": {
+
+      "extensions": \["ritwickdey.LiveServer"\],
+
+      "settings": {
+
+        "liveServer.settings.root": "/",
+
+        "liveServer.settings.port": 5500
+
+      }
+
+    }
+
+  },
+
+  "forwardPorts": \[5500\]
+
+}
+
+devcontainer.json (cclinicfile 저장소):
+
+{
+
+  "name": "cclinicfile",
+
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+
+  "customizations": {
+
+    "vscode": {
+
+      "extensions": \["ritwickdey.LiveServer"\],
+
+      "settings": {
+
+        "liveServer.settings.root": "/",
+
+        "liveServer.settings.port": 5500
+
+      }
+
+    }
+
+  },
+
+  "forwardPorts": \[5500\]
+
+}
+
+작업 워크플로우 ([cclinic.kr](http://cclinic.kr/)): GitHub에서 Codespace 열기 → Live Server로 미리보기(포트 5500\) → 파일 수정 → 브라우저에서 즉시 확인 → git add → git commit → git push → Cloudflare Pages 자동 배포. 광고 운영 중이므로 dev 브랜치에서 먼저 테스트 후 main 병합 권장.
+
+작업 워크플로우 ([file.cclinic.kr](http://file.cclinic.kr/)): Codespace에서 images/price.webp 교체 → Live Server로 이미지 미리보기 → 커밋 → 푸시 → Cloudflare Pages 자동 배포(1\~2분) → 모든 채널 자동 업데이트.
+
+### **2-4. 이미지 현황 (2026-04-11 확정)**
+
+모든 이미지가 로컬(/images/ 폴더)에서 서빙되며, 외부 CDN 참조는 가격표 2건([file.cclinic.kr](http://file.cclinic.kr/) — 한글 price.webp, 영문 price\_en.webp)만 존재합니다. Genspark CDN 참조는 2026-04-10 1차 제거(19건), 2026-04-11 잔여 제거(4건: m/data/services/cellulite.json 2건, m/data/services/striae.json 2건)로 **완전 제거**되었습니다.
+
+| 이미지 위치 | 상태 | 비고 |
+| ----- | ----- | ----- |
+| og:image 메타태그 | 로컬 완료 | /images/og-image.jpg (27,714 B) |
+| JSON-LD image 필드 | 로컬 완료 | /images/og-image.jpg |
+| index.html 프로필 사진 | 로컬 완료 | /images/dr\_1.jpg |
+| index.html 시술 이미지 | 로컬 완료 | /images/bg\_1.webp |
+| index.html 방송 썸네일 | 로컬 완료 | /images/broadcast-thumbnail.webp |
+| 시술 페이지 이미지 (8개 시술) | 로컬 완료 | /images/cases/ 폴더 (16개 파일) |
+| 셀룰라이트 사례 이미지 | 로컬 완료 | /images/cases/cellulite\_01.jpg, cellulite\_02.jpg |
+| 튼살 사례 이미지 | 로컬 완료 | /images/cases/striae\_01.jpg, striae\_02.jpg |
+| 셀룰라이트 페이지 이미지 | 로컬 완료 | /images/cellulite\_main.jpg, cellulite\_body.jpg |
+| 튼살 페이지 이미지 | 로컬 완료 | /images/striae\_main.jpg, striae\_body.jpg |
+| 가격표 이미지 (한글) | [file.cclinic.kr](http://file.cclinic.kr/) | /images/price.webp (128,660 B, 의도적 외부) |
+| 가격표 이미지 (영문) | [file.cclinic.kr](http://file.cclinic.kr/) | /images/price\_en.webp (추후 영문 변경 예정) |
+| Genspark CDN 참조 | **0건** | 2026-04-10\~11 완전 제거 확인 |
+
+/images/cases/ 폴더 파일 목록 (16개): fat\_graft\_01.jpg, fat\_graft\_02.jpg, adhesion\_01.jpg, adhesion\_02.jpg, eyelid\_01.jpg, eyelid\_02.jpg, faceline\_01.jpg, faceline\_02.jpg, vline\_01.jpg, vline\_02.jpg, powerline\_01.jpg, powerline\_02.jpg, cellulite\_01.jpg, cellulite\_02.jpg, striae\_01.jpg, striae\_02.jpg.
+
+### **2-5. SEO 및 AI 크롤러 구성**
+
+robots.txt (2026-03-17 갱신): 모든 주요 AI 봇(GPTBot, ChatGPT-User, OAI-SearchBot, ClaudeBot, Claude-Web, PerplexityBot, Google-Extended, Googlebot, Bingbot, BingPreview, Amazonbot, FacebookBot, meta-externalagent, Bytespider, Applebot, Applebot-Extended, cohere-ai, YouBot)에 Allow: / 설정. 레거시 Cafe24 경로 8개와 /thank-you/ Disallow. Sitemap 2건(sitemap.xml, llms.txt) 선언.
+
+JSON-LD 스키마 (5종): FAQPage(8개 시술 페이지 × FAQ 총 94개), MedicalProcedure(8개), LocalBusiness, Person, WebSite. Schema Validator 검증 시 오류 0건.
+
+OpenGraph 태그: og:image → [https://cclinic.kr/images/og-image.jpg](https://cclinic.kr/images/og-image.jpg), og:type, og:title, og:description 설정 완료. 10개 HTML 파일에 참조. 영문 페이지(en/index.html)에는 og:locale=“en\_US”, og:title=“Charm Clinic Seoul \- Non-Steroidal Adipocytolysis Injection” 별도 설정.
+
+hreflang 태그: index.html, m/index.html, en/index.html에 ko, en, x-default 3개 언어 태그 설정 완료. sitemap.xml에 en/ 엔트리 추가 완료. llms.txt에 영문 사이트 항목 추가 완료.
+
+NAP 일관성: "관악로 164"와 "02-838-3380"이 index.html에 각 4회 등장. 네이버 플레이스, 블로그, 홈페이지 간 주소·전화번호 일치. 영문 페이지에서는 국제 전화번호 형식(+82-2-838-3380)으로 표기.
+
+### **2-6. [file.cclinic.kr](http://file.cclinic.kr/) — 가격표 CDN 아키텍처**
+
+file.cclinic.kr은 가격표 이미지를 단일 소스(single source of truth)로 제공하는 정적 CDN입니다. 모든 채널이 고정 URL을 참조하므로, 파일 하나만 교체하면 전 채널에 동시 반영됩니다.
+
+| 파일 | 용도 |
+| ----- | ----- |
+| images/price.webp | 가격표 이미지 — 한글 (128,660 B) |
+| images/price\_en.webp | 가격표 이미지 — 영문 (추후 영문 변경 예정) |
+| images/.gitkeep | 빈 폴더 유지 |
+| index.html | 안내 페이지 (noindex, nofollow) |
+| 404.html | 3초 후 cclinic.kr로 리다이렉트 |
+| \_headers | CORS \*, cache max-age=300, nosniff |
+| .devcontainer/devcontainer.json | Codespaces 설정 |
+| [README.md](http://readme.md/) | 개발환경 문서 |
+
+### **2-7. 주요 커밋 이력**
+
+| 커밋 | 일자 | 저장소 | 내용 |
+| ----- | ----- | ----- | ----- |
+| 21de856 | 2026-03-14 | cclinic | llms.txt, llms-full.txt, 8개 Markdown 파일 추가 |
+| — | 2026-03-17 | cclinic | robots.txt AI 크롤러 허용 업데이트 |
+| 30e392b | 2026-04-10 | cclinic | index.html Genspark CDN → 로컬 og-image.jpg 교체 |
+| 70e24e1 | 2026-04-10 | cclinic | [README.md](http://readme.md/) 프로젝트 개요 수정 |
+| a2f4da2 | 2026-04-10 | cclinic | Genspark CDN 이미지 19개 로컬 마이그레이션 (업로드) |
+| b5dfc2b | 2026-04-10 | cclinic | 미사용 이미지 19개 삭제 |
+| 9daadef | 2026-04-10 | cclinic | Cloudflare Pages 재배포 트리거 |
+| 782990e | 2026-04-10 | cclinicfile | 리포지토리 이름 변경 확인 테스트 |
+| 18ce644 | 2026-04-11 | cclinic | fix(en): JSON 키 ‘process’ → ‘howItWorks’ 수정 |
+| 7100ccc | 2026-04-11 | cclinic | feat(en): JS UI 텍스트 전체 영문 전환 |
+| 0d60736 | 2026-04-11 | cclinic | feat(en): 영문 thank-you 페이지 추가, 폼 리다이렉트 수정 |
+| e0696bd | 2026-04-11 | cclinic | fix: Genspark CDN 잔여 4건 로컬 교체 |
+| — | 2026-05-12 | cclinic | feat: 데스크탑·모바일 상담섹션 카카오톡 오픈채팅 링크 추가 |
+| — | 2026-05-12 | cclinic | feat: 데스크탑 카카오톡 클릭 GA4 이벤트 추가 (kakao\_click) |
+
+### **2-8. 비용 구조**
+
+| 항목 | 월 비용 |
+| ----- | ----- |
+| Cloudflare Pages ([cclinic.kr](http://cclinic.kr/)) | $0 |
+| Cloudflare Pages ([file.cclinic.kr](http://file.cclinic.kr/)) | $0 |
+| GitHub Codespaces | $0 (월 120 core-hours, 60시간 무료) |
+| Anthropic API (Claude) | \~$1 미만 |
+| Genspark Builder | $0 (해지, 이전 $24.99\~$249/월) |
+| 도메인 | 기존 유지비만 |
+| **합계** | **\~$1 미만** |
+
+---
+
+## **3\. 시술 체계 — 지방파괴주사 계열**
+
+### **3-1. 공통 특징**
+
+참의원의 주사시술은 모두 "지방파괴주사"라는 상위 카테고리에 속하며, 시술 부위와 목적에 따라 세부 시술명으로 나뉩니다.
+
+약물 특성은 비스테로이드(트리암시놀론 미사용)이며, 스테로이드로 인한 피부 함몰, 패임, 탈색, 부정출혈 부작용이 없습니다. 작용 기전은 지방세포 자체를 파괴하는 세포파괴술로, 파괴된 지방세포는 림프계를 통해 자연 배출되며 영구적 효과(요요 없음)를 보입니다. 절개·마취 불필요, 시술시간 약 5\~10분, 즉시 일상 복귀 가능합니다. 주사 후 1\~7일 사이 사이즈 감소(대부분 1\~5일)가 나타나며, 동일부위 시술 간격은 1주일이고 간격이 늘어나도 결과에 영향 없습니다. 부작용은 붓기 6\~8시간 지속, 멍 가능(2\~3주), 드물게 약물 알러지입니다. 시술 당일 음주·사우나·수영 금지이며 세수·샤워·가벼운 활동은 가능합니다.
+
+### **3-2. 세부 시술 8종 상세**
+
+**① 지방이식제거주사 ([cclinic.kr/fat-graft-removal-injection/](http://cclinic.kr/fat-graft-removal-injection/))**  
+ 목적은 지방이식 후 과생착된 지방 제거, 유착 개선, 울퉁불퉁한 표면 교정, 비대칭 교정입니다. 대상 부위는 얼굴(이마, 볼 등), 가슴, 엉덩이 등 모든 이식 부위입니다. 과잉 지방의 양과 유착 정도에 따라 횟수가 결정되며 일반적으로 5회 권장, 조직의 단단한 정도에 따라 약물 농도를 조절합니다.
+
+**② 유착제거주사 ([cclinic.kr/adhesion-injection/](http://cclinic.kr/adhesion-injection/))**  
+ 목적은 지방흡입 수술 후 발생한 유착 제거, 바이오본드 개선, 울퉁불퉁한 표면 교정입니다. 대상 부위는 복부, 허리, 팔뚝 등 바디부위와 광대, 볼, 심술보, 사각턱, 이중턱 등 얼굴부위입니다. 지방세포 파괴와 과증식된 섬유조직 제거로 유착을 개선하며, 유착이 심한 경우 조직 연화가 먼저 일어나고 충분히 연화된 후 사이즈가 감소합니다. 수술 후 수년이 지나도 시술 가능합니다.
+
+**③ 눈두덩이주사 ([cclinic.kr/eyelid-injection/](http://cclinic.kr/eyelid-injection/)) — 특허출원**  
+ 목적은 눈꺼풀 지방 제거, 쌍수 후 붓기·유착 개선, 소세지눈 교정, 안검하수 교정, 짝눈교정입니다. 대상 부위는 눈두덩이, 눈밑, 눈꼬리아래 피하지방입니다. 지방제거와 동시에 강한 타이트닝 효과가 있어 지방제거 후 눈꺼풀 처짐 없이 오히려 눈이 약간 커보입니다. 5회에 걸쳐 매주 조각하며 붓기는 6\~12시간 지속됩니다. 쌍수 후 소세지눈의 3가지 원인은 잔여 지방조직(하선 두꺼움), 봉합선 주위 유착(울퉁불퉁), 유착+순환문제 복합(부드럽지만 부어보임)입니다.
+
+**④ 윤곽주사 ([cclinic.kr/face-line-injection/](http://cclinic.kr/face-line-injection/))**  
+ 목적은 얼굴 지방 제거, 안면비대칭 교정, 페이스라인 형성입니다. 대상 부위는 광대\~턱뼈 주위 피하지방(볼살, 광대살, 사각턱, 심술보)이며, 5회에 걸쳐 매주 조각합니다. 양쪽 지방층 두께를 다르게 조절하여 비대칭을 교정하며, 심술보는 필수 교정부위입니다.
+
+**⑤ 브이라인주사 ([cclinic.kr/v-line-injection/](http://cclinic.kr/v-line-injection/))**  
+ 목적은 턱살·이중턱·불독살·목살 제거, V라인 형성, 아래턱 비대칭 교정입니다. 대상 부위는 턱뼈 주변, 이중턱, 목살 피하지방입니다. 마취 불필요(약간의 통증만), 3일 후 가벼워지고 1주일 이내 사이즈가 감소합니다. 목 부분은 지방 제거 후 충분한 타이트닝이 핵심입니다.
+
+**⑥ 파워라인주사 ([cclinic.kr/powerline-injection/](http://cclinic.kr/powerline-injection/))**  
+ 목적은 전신 피하지방 제거와 바디라인 완성입니다. 대상 부위는 팔뚝, 복부, 옆구리, 뒷구리, 허벅지, 무릎, 종아리, 등살, 브라라인, 겨드랑이, 힙지방입니다. 용량은 160cc(여성 손바닥 약 4개 면적)로 바디라인주사(80cc)의 2배입니다. 여러 부위 시술 시 매일 다른 부위 시술 가능하며, 양쪽 사이즈 차이 시 약물량 조절로 비대칭 교정이 가능합니다. 지방량이 많으면 주 2회도 가능합니다.
+
+**⑦ 셀룰라이트주사 ([cclinic.kr/cellulite-injection/](http://cclinic.kr/cellulite-injection/))**  
+ 목적은 운동·다이어트로 제거 안 되는 셀룰라이트 제거입니다. 대상 부위는 허벅지, 엉덩이, 복부, 골반, 팔뚝, 무릎, 종아리입니다. 섬유화된 지방 파괴, 엉겨붙은 조직 분해, 림프순환 개선의 작용을 하며, 일반 지방분해주사와 달리 섬유화 조직까지 분해합니다. 과도한 체중감량이 오히려 셀룰라이트를 악화시킬 수 있습니다.
+
+**⑧ 튼살주사 ([cclinic.kr/striae-injection/](http://cclinic.kr/striae-injection/))**  
+ 목적은 흰튼살(striae alba) 개선이며, 대상 부위는 복부, 허벅지, 엉덩이, 옆구리 등입니다. 참의원만의 독보적 시술로, 붉은 튼살(striae rubra)과 깊게 패인 튼살에는 효과 없어 시술을 비권장합니다. 기본 4회 권장이며, 하루 120cc(손바닥 2\~3개 면적)입니다.
+
+---
+
+## **4\. 네이버 블로그 현황**
+
+### **4-1. 블로그 게시글 목록 (확인된 전체)**
+
+| 날짜 | 제목 | logNo |
+| ----- | ----- | ----- |
+| 2026.02.26 | 쌍수 후 소세지눈이 안 빠지는 이유 | (최신) |
+| 2026.02.10 | 러브핸들? 운동해도 안 빠지는 뒷구리살\! | — |
+| 2026.01.28 | 허벅지 지방 빼기, 승마살주사 | — |
+| 2025.12.xx | 브이라인주사로 턱살·이중턱·불독살 개선 | — |
+| 2025.10.15 | 이마 얼굴 지방이식후 뭉침과 유착의 조기치료가 필요한 분들의 특징 (공지) | 224042216314 |
+| 2025.07.29 | 유착제거주사 개요 (공지) | 223951064499 |
+| 2025.06.xx | 지방흡입후 바이오본드를 주사로 개선하는 방법 | — |
+| 2025.05.03 | 이마 지방이식 붓기 원인 및 지방이식제거주사로 제거하는 법 | — |
+| 2025.05.02 | 스테로이드 없는 윤곽주사로 얼굴살, 볼살, 광대살 빼는법 (공지) | 223853796026 |
+| 2024.04.18 | 셀룰라이트주사로 매끈한 피부 만들기 | 223419673123 |
+| 2024.04.04 | 지방이식제거주사의 부위별 특징 | 223405663144 |
+| 2024.03.19 | 바디라인주사를 이용한 뱃살, 옆구리살, 팔뚝살, 허벅지살, 무릎살, 종아리살 제거법 (공지) | 223388444246 |
+| 2024.02.23 | 눈두덩이주사 개요 (공지) | 223362771698 |
+| 2024.02.09 | 이마 지방이식제거주사로 개선이 잘되는 이마\! 잘안되는 이마 | 223348868540 |
+| 2024.01.06 | 주사시술에 스테로이드를 사용하지 않는 이유 | 223314549045 |
+| 2023.12.19 | NO스테로이드 지방이식제거주사 | 223297252006 |
+| 2023.12.05 | 스테로이드 없는 유착제거주사로 지방흡입 부작용 치료 | 223283457610 |
+
+주의사항: 특정 게시글(logNo=224069427392)이 네이버에 의해 신고 기반 제한 상태입니다. 콘텐츠 작성 시 네이버 가이드라인에 맞는 표현 사용이 필요합니다.
+
+### **4-2. 네이버 홈판(Home Feed) 분석**
+
+네이버 모바일 앱의 AI 개인화 추천 피드를 "홈판"이라 합니다. 유입 경로에 "홈판"이 표시되면 사용자가 직접 검색하지 않았음에도 네이버 AI가 해당 글을 추천한 것입니다. 홈판 노출에는 사용자의 최근 검색어·클릭 이력·관심 카테고리·체류시간 등 행동 데이터와, 콘텐츠의 명확한 제목(후킹형), 문제 제시형 첫 문단, 모바일 가독성, 독창성, 전문성, 초기 참여가 영향을 미칩니다. 직접 검색하지 않는 잠재 환자에게까지 도달할 수 있다는 점에서 마케팅적 의의가 큽니다.
+
+### **4-3. 작성 완료된 블로그 콘텐츠**
+
+광대살·덕콩형 얼굴: 키워드 분석(덕콩형 얼굴 ≈6,300\~7,400/월, 윤곽주사 ≈22,000\~23,500/월), 제목 “광대살 때문에 덕콩형 얼굴이 된다? — 광대살 빼는 법과 윤곽주사”, 두 가지 타입 설명(볼볼록 부족 vs 하안면 지방 과다) → 비스테로이드 윤곽주사 소개 구조.
+
+뒷구리살: 키워드 분석(뒷구리살 ≈400\~440/월, 러브핸들 ≈3,440/월), 제목 “뒷구리살(러브핸들) 빼는법 — 운동으로 안 빠지는 이유와 주사시술로 해결하는 방법”, 차별화 포인트로 대부분의 경쟁 콘텐츠가 운동·홈트 관점인 반면 "운동으로 안 빠지는 이유"를 먼저 설명 후 주사시술 솔루션을 제시합니다.
+
+---
+
+## **5\. 상담 채널 구성 (2026-05-12 신규)**
+
+### **5-1. 상담 섹션 구조**
+
+데스크탑(index.html)과 모바일(m/index.html) 모두 상담 섹션(\#consultation)에 전화, 문자, 카카오톡 3개 채널이 배치되어 있습니다.
+
+| 채널 | 링크 | GA4 이벤트 |
+| ----- | ----- | ----- |
+| 전화 | tel:02-838-3380 | click\_call (param: 02\) |
+| 문자 | sms:010-9832-3380 | sms\_click |
+| 카카오톡 | [https://open.kakao.com/o/szrVRzui](https://open.kakao.com/o/szrVRzui) | kakao\_click |
+| 네이버 예약 | [https://booking.naver.com/booking/13/bizes/837910](https://booking.naver.com/booking/13/bizes/837910) | booking\_click |
+| Email 상담 | 팝업 폼 (Formspree) | click\_email\_consult |
+
+### **5-2. 카카오톡 상담 설정**
+
+카카오톡 플러스친구(채널)는 사용하지 않으며, 카카오톡 오픈채팅 1:1 방식을 사용합니다. 오픈채팅방 이름은 "참의원 상담"이며, 링크 클릭 시 원장님과 1:1 대화가 가능합니다. 영문 사이트(/en/)에는 카카오톡을 추가하지 않습니다.
+
+---
+
+## **6\. 향후 작업 시 참고사항**
+
+### **6-1. 원장님 대화 스타일 및 작업 방식**
+
+전문적인 대화 톤을 선호하며, 마케팅과 의학적 관점을 모두 중시합니다. 데이터 기반 의사결정(키워드 검색량, 트래픽 분석 등)을 하며, 블로그 글 작성 시 키워드 리서치 → 제목에 키워드 배치 → 참의원 시술 내용 참고 → 경쟁 콘텐츠 대비 차별화 구조를 따릅니다.
+
+### **6-2. 참의원 시술의 핵심 차별점 (모든 콘텐츠에 일관 적용)**
+
+비스테로이드(트리암시놀론 미사용), 지방세포 파괴 방식(요요 없음, 영구적), 지방 제거 \+ 타이트닝 동시, 절개·마취·회복기간 불필요, 5\~10분 시술 즉시 일상복귀, 좌우 비대칭 교정 가능.
+
+### **6-3. 기술적 주의사항**
+
+cclinic.kr은 유료 광고가 운영 중이므로 파일 수정 시 반드시 dev 브랜치에서 테스트 후 main에 병합해야 합니다. Codespaces에서 Live Server로 미리보기한 후 push하는 습관을 유지해야 합니다.
+
+### **6-4. 영문 사이트 유지보수 주의사항 (2026-04-11 신규)**
+
+한글 사이트(m/) 콘텐츠 변경 시 영문 사이트(en/) JSON 및 JS도 동기화가 필요합니다. 서비스 상세 데이터는 `en/data/services/`의 JSON 파일에서 관리되며, JS가 참조하는 키는 `howItWorks`(process 아님), `benefits`, `faq`, `cases`, `intro`, `title`, `badge`, `icon`입니다. 새로운 서비스 추가 시 `en/data/services-index.json`, 해당 서비스 JSON, 리뷰 JSON, `en/js/service-panel.js`의 `serviceIdMap`에 모두 엔트리를 추가해야 합니다.
+
+---
+
+## **7\. 문서 체계**
+
+| 문서 ID | 문서명 | 갱신 빈도 |
+| ----- | ----- | ----- |
+| CC표준1 | CC 마스터문서 (본 문서) | 인프라·시술 변경 시 |
+| CC표준2 | CC 작업이력·의사결정 | 매 작업 세션 |
+| CC표준3 | CC 잔여작업·로드맵 | 주기적 검토 |
+
+---
+
+**CC표준1 끝**
+
+---
+
